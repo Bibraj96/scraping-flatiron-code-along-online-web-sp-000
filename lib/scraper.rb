@@ -7,6 +7,14 @@ require_relative './course.rb'
 class Scraper
 
 #Responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page.
+
+#Calls on .make_courses and then iterates over all of the
+#Courses that get created to puts out a list of course offerings.
+
+#Responsible for actually instantiating Course objects and giving
+#Each course object the correct title, schedule and description attribute that we scraped from the page.
+
+
   def get_page
     doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
 
