@@ -4,6 +4,6 @@ class Course
   @@all = []
 
   def iniitalize
-
+    @@all << self
   end
 end
