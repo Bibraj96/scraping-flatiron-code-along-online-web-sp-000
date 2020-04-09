@@ -19,8 +19,10 @@ class Scraper
   def make_courses
   end
 
-  def print_courses #Calls on .make_courses and then iterates over all of the
-    self.make_courses #courses that get created to puts out a list of course offerings.
+#Calls on .make_courses and then iterates over all of the
+#Courses that get created to puts out a list of course offerings.
+  def print_courses
+    self.make_courses
       self.make_courses
     Course.all.each do |course|
       if course.title && course.title != ""
