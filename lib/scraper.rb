@@ -4,7 +4,7 @@ require 'open-uri'
 require_relative './course.rb'
 
 class Scraper
-  
+
 #Responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page.
   def get_page
 
