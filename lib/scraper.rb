@@ -21,6 +21,7 @@ class Scraper
 #Responsible for using a CSS selector to grab all of the HTML elements that contain a course.
 #The return value of this method should be a collection of Nokogiri XML elements, each of which describes a course offering.
   def get_courses
+    self.get_page.css(".post")
   end
 
 #Responsible for actually instantiating Course objects and giving
