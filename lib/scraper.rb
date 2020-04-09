@@ -8,6 +8,9 @@ class Scraper
   def get_page
   end
 
+  def get_courses
+  end
+
   def print_courses #Calls on .make_courses and then iterates over all of the
     self.make_courses #courses that get created to puts out a list of course offerings.
       self.make_courses
