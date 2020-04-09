@@ -14,6 +14,9 @@ class Scraper
 #Responsible for actually instantiating Course objects and giving
 #Each course object the correct title, schedule and description attribute that we scraped from the page.
 
+#Responsible for using a CSS selector to grab all of the HTML elements that contain a course.
+#The return value of this method should be a collection of Nokogiri XML elements, each of which describes a course offering.
+
 
   def get_page
     doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
