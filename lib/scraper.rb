@@ -4,15 +4,15 @@ require 'pry'
 
 require_relative './course.rb'
 
-#Responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page.
+ #get_page: Responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page.
 
-#Calls on .make_courses and then iterates over all of the
+#get_courses: Calls on .make_courses and then iterates over all of the
 #Courses that get created to puts out a list of course offerings.
 
-#Responsible for actually instantiating Course objects and giving
+#make_courses: Responsible for actually instantiating Course objects and giving
 #Each course object the correct title, schedule and description attribute that we scraped from the page.
 
-#Responsible for using a CSS selector to grab all of the HTML elements that contain a course.
+#print_courses: Responsible for using a CSS selector to grab all of the HTML elements that contain a course.
 #The return value of this method should be a collection of Nokogiri XML elements, each of which describes a course offering.
 
 class Scraper
