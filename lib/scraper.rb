@@ -7,7 +7,6 @@ class Scraper
 
 #Responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page.
   def get_page
-
   end
 
 #Responsible for using a CSS selector to grab all of the HTML elements that contain a course.
@@ -15,8 +14,9 @@ class Scraper
   def get_courses
   end
 
-  def make_courses #Responsible for actually instantiating Course objects and giving
-    #each course object the correct title, schedule and description attribute that we scraped from the page.
+#Responsible for actually instantiating Course objects and giving
+#Each course object the correct title, schedule and description attribute that we scraped from the page.
+  def make_courses
   end
 
   def print_courses #Calls on .make_courses and then iterates over all of the
