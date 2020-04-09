@@ -5,15 +5,15 @@ require_relative './course.rb'
 
 class Scraper
 
-  def get_page #Responsible for using Nokogiri
-    #and open-uri to grab the entire HTML document from the web page.
+  def get_page #Responsible for using Nokogiri and open-uri to grab the entire HTML document from the web page.
+
   end
 
   def get_courses #responsible for using a CSS selector to grab all of the HTML elements that contain a course.
     #The return value of this method should be a collection of Nokogiri XML elements, each of which describes a course offering.
   end
 
-  def make_courses#Responsible for actually instantiating Course objects and giving 
+  def make_courses #Responsible for actually instantiating Course objects and giving
     #each course object the correct title, schedule and description attribute that we scraped from the page.
   end
 
